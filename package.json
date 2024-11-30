@@ -1,0 +1,62 @@
+{
+  "name": "desktop-reactjs-boilerplate",
+  "description": "(01-Jun-2023) ElectronJS, ReactJS 18 with desktop multi-window support.",
+  "version": "1.1.1",
+  "author": "https://www.github.com/kkamara",
+  "private": true,
+  "main": "public/electron.js",
+  "homepage": "./",
+  "build": {
+    "appId": "<com.desktop-reactjs-boilerplate>"
+  },
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test --env=jsdom",
+    "react-eject": "react-scripts eject",
+    "electron-build": "electron-builder",
+    "release": "npm run build && electron-builder --linux --win --mac --x64 --ia32 --publish never",
+    "builder:build": "electron-builder --win --mac --x64 --publish never",
+    "build": "npm run react-build && npm run builder:build",
+    "start": "concurrently \"cross-env BROWSER=none yarn react-start\" \"wait-on http://localhost:3000 && electron .\""
+  },
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "axios": "^1.6.4",
+    "bootstrap": "^5.3",
+    "jquery": "^3.6.3",
+    "moment": "^2.29.2",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.7",
+    "react-dom": "^18.0.0",
+    "react-paginate": "^8.1.3",
+    "react-redux": "^7.2.8",
+    "react-router": "^6.2.2",
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.32.11"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "concurrently": "^9.1.0",
+    "cross-env": "^7.0.3",
+    "electron": "^33.2.1",
+    "electron-builder": "^25.1.8",
+    "react-scripts": "^5.0.1",
+    "sass-vars-to-js-loader": "^2.1.1",
+    "wait-on": "^8.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
