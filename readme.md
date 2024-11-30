@@ -1,12 +1,12 @@
 <img src="https://github.com/kkamara/useful/blob/main/drb.png?raw=true" alt="drb.png" />
 
-# Desktop ReactJS Boilerplate
+# Tasks Desktop App
 
-(01-Jun-2023) ElectronJS, ReactJS 18 with desktop multi-window support.
+(29-Nov-2024) Built with https://www.github.com/kkamara/desktop-reactjs-boilerplate .
 
 ## Download
 
-* [macOs](https://github.com/kkamara/desktop-reactjs-boilerplate/releases).
+* [Windows](https://github.com/kkamara/tasks-desktop-app/releases).
 
 ## Installation
 
