@@ -1,3 +1,3 @@
 const handlePrimaryBtnClick = () => {
-    window.api.send("closeChildWindow")
+    window.api.send("closeChildWindow");
 }
